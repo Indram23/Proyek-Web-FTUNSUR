@@ -1,164 +1,345 @@
 html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;   
 }
-
 body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+  overflow-x:hidden;     
+}
+.btn-1{
+  color: #000000 !important;
+  font-size: 16px;
+  text-shadow: -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;  
+  transition: 0.3s; 
+}
+.btn-1:hover{
+  color: #00CADB !important;
+  background: transparent !important;
+  transition: 0.3s; 
 }
 
-header {
-      width: 100%;
-      height: 90vh;
-      background: url(../image/mikuUnsur.jpg) no-repeat 50% 50%;
-      background-size: cover;
-      transition: all 1000ms;
-}
-
-
-
-.content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
+.btn-1:active{
+  background-color:;
+  color: #00CADB;
 }
 
 .logo {
-      position: fixed;
-      float: left;
-      margin: -50px 46px;
-
+  position: fixed;
+  float: left;
+  margin: -50px 46px;
 }
-
 img{
-      height: 95px;
-      margin-top: 43px;
+  height: 95px;
+  margin-top: 43px;
 }
-
 nav {
-      position: fixed;
-      width: 100%;
-      line-height: 60px;
-      
+  position: fixed;
+  width: 100%;
+  line-height: 60px;   
+  z-index:9999; 
 }
-
 nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      padding-right: 40px;
-      transition: all 1000ms;
-      
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: visible;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  padding-right: 40px;
+  transition: all 1000ms;          
 }
-
 nav.black ul {
-      background: #1976D2;
-      transition: all 1000ms;
+  background: #1976D2;
+  transition: all 1000ms;     
 }
-
-
 nav ul li {
-      display: inline-block;
-      padding: 16px 15px;;
+  display: inline-block;
+  padding: 16px 15px;     
 }
-
 nav ul li a {
-      text-decoration: none;
-      font-size: 16px;
-      color: white;
-      text-shadow:
-       -1px -1px 0 #000,  
-       1px -1px 0 #000,
-      -1px 1px 0 #000,
-        1px 1px 0 #000;
-
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;  
+  -webkit-font-smoothing: antialiased;
+    transition: 0.3s;
+    position: relative;        
 }
-
 nav ul li a:hover{
-      text-decoration: none;
-      color: #00CADB;
+  text-decoration: none;
+  color: #00CADB;
+  transition: 0.3s;     
 }
-
+nav ul li a:active{
+  text-decoration: none !important;
+  color: #00CADB !important;
+}
+.dropdown{
+  display: inline; 
+}
+.dropdown button{
+  color: #00CADB;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-weight: bold;
+}
 .menu-icon {
-      line-height: 60px;
-      width: 100%;
-      background: #1976D2;
-      text-align: right;
-      box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      display: none;
-      opacity: 0.8;
-      
+  line-height: 60px;
+  width: 100%;
+  background: #1976D2;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;               
+}
+@media (max-width: 1169px){
+  #logoHeader{
+        opacity:0.1 ;
+        transition: all 1000ms;
+  }
+}
+@media(max-width: 849px) {
+.logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  } 
+  nav ul {
+        max-height: 0px;
+        background:  #1976D2;
+        overflow: hidden;   
+  }
+   nav.black ul {
+        background: #1976D2;
+        transition: all 1000ms;     
+  } 
+  .showing {
+        max-height: 34em;
+        transition: all 1000ms;
+        content:filter: blur(8px);          
+  } 
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px;
+        text-align: center;      
+  }
+  .menu-icon {
+        display: block;                
+  } 
+  .dropdown{
+        display: block;
+        text-align: center;
+        background: #1976D2;
+  } 
+  .dropdown-menu{
+         margin-left: 45px;
+         width: 90%;
+         position: relative;
+  }  
+  #logoHeader{
+  height: 95px;
+  margin-top: -20px;
+  margin-left: -50px;
+  transition: all 1000ms;
+  opacity: 1;
+  }
+} 
+ #footer{
+  height: 20%;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+ .services{
+  background: #f1f1f1;
+  text-align: center;
+  transition: all 1000ms;  
+} 
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #1976D2;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+ .service{
+  display: inline-block;
+  width: calc(100% / 4);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+ .service i{
+  color: #1976D2;
+  font-size: 60px;
+  margin-bottom: 30px;
+} 
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+} 
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+ @media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+ @media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+/* REMOVE THIS, USE YOUR OWN  */
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+width: 100%;
+position: relative;
+height: auto;
+background-color: #00001a;
+transition: all 1000ms;  
+}
+.footer .col {
+width: 190px;
+height: auto;
+float: left;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+margin: 0;
+padding: 0;
+font-family: inherit;
+font-size: 12px;
+line-height: 17px;
+padding: 20px 0px 5px 0px;
+color: rgba(255,255,255,0.2);
+font-weight: normal;
+text-transform: uppercase;
+letter-spacing: 0.250em;
+}
+.footer .col ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.footer .col ul li {
+color: #999999;
+font-size: 14px;
+font-family: inherit;
+font-weight: bold;
+padding: 5px 0px 5px 0px;
+cursor: pointer;
+transition: .2s;
+-webkit-transition: .2s;
+-moz-transition: .2s;
+}
+.social ul li {
+display: inline-block;
+padding-right: 5px !important;
 }
 
-@media (max-width: 1150px){
-      img{
-            opacity:0.1 ;
-            transition: all 1000ms;
-      }
+.footer .col ul li:hover {
+color: #ffffff;
+transition: .1s;
+-webkit-transition: .1s;
+-moz-transition: .1s;
 }
-@media(max-width: 786px) {
 
-      .logo {
-            position: fixed;
-            top: 0;
-            margin-top: 16px;
-      }
-
-      header{
-            height: 40vh;
-            
-      }
-
-      nav ul {
-            max-height: 0px;
-            background:  #1976D2;
-            opacity: 0.8;
-         
-      }
-
-      nav.black ul {
-            background: #1976D2;
-            transition: all 1000ms;
-      }
-
-      .showing {
-            max-height: 34em;
-            transition: all 1000ms;
-            
-      }
-
-      nav ul li {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 0px;
-            text-align: center;
-      }
-
-      .menu-icon {
-            display: block;
-            
-           
-      }
-
-      
-img{
-      height: 95px;
-      margin-top: -20px;
-      margin-left: -50px;
-      transition: all 1000ms;
-      opacity: 1;
+.footer .col a{
+  text-decoration: none;
+  color: #999999;
 }
+
+.footer .col a:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.clearfix {
+clear: both;
+}
+@media only screen and (min-width: 1280px) {
+.contain {
+width: 1200px;
+margin: 0 auto;
+}
+}
+@media only screen and (max-width: 1139px) {
+.contain .social {
+width: 1000px;
+display: block;
+}
+.social h1 {
+margin: 0px;
+}
+}
+@media only screen and (max-width: 950px) {
+.footer .col {
+width: 33%;
+}
+.footer .col h1 {
+font-size: 14px;
+}
+.footer .col ul li {
+font-size: 13px;
+}
+}
+@media only screen and (max-width: 786px) {
+.social img{
+margin:auto;
+}
+}
+@media only screen and (max-width: 500px) {
+.footer .col {
+  width: 50%;
+}
+.footer .col h1 {
+  font-size: 14px;
+}
+.footer .col ul li {
+  font-size: 13px;
+}
+}@media only screen and (max-width: 340px) {
+.footer .col {
+width: 100%;
+}
+}
+
+
+
 
 

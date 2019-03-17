@@ -1,0 +1,255 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.icon img {
+   width: 100%;
+  vertical-align: middle;  
+  height: 150px;
+  margin-top: -5px;
+}
+
+.blog-item img {
+  display: block;
+}
+.blog-item a {
+    display: flex;
+    padding: 50px;
+    overflow: hidden;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.blog-item a:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.blog-item .icon {
+    width: 35%;
+    object-fit: cover;
+    margin-right: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.blog-item .content {
+    width: 65%;
+}
+
+.blog-item .content .title {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: #25aae1;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.blog-item .content .title .blog-date {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+.blog-item .content .title .blog-date:before {
+    content: '/';
+    color: #2bb673;
+    font-size: 25px;
+    top: auto;
+    position: relative;
+    margin-right: 10px;
+}
+
+.blog-item .content .rounded {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-item .item-arrow {
+    height: 20px;
+    width: 15%;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    left: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.blog-item a:hover > .item-arrow {
+    /*padding-left: 40px;*/
+    color: #25aae1;
+    left: 30px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.rounded {
+    width: 70px;
+    height: 5px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #25aae1, #40e495);
+    /* background: #2bb769; */
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 826px)
+{
+  .icon img {
+   margin:auto;
+ }
+}
+@media screen and (max-width: 768px){
+
+    .blog-item .content {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .blog-item .content .title {
+        font-size: 18px;
+    }
+
+    .blog-item .item-arrow {
+        margin: auto;
+    }
+
+    .blog-item .icon {
+        width: 100%;
+    }
+
+    .blog-item .icon img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .blog-item {
+        width: 92%;
+        margin: auto;
+    }
+
+    .blog-item a {
+        display: block;
+        padding: 30px;
+    }
+    
+
+}
+
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+    padding: 0 2rem 2rem;
+    
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    transition: transform 400ms ease-out;
+    
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+    margin: 0;
+  }
+	}
+}
+

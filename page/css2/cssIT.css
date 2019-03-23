@@ -1,0 +1,194 @@
+.container-fluid{
+    padding-top:15vh;
+    margin: 0px 300px;
+    text-align: justify;
+   
+  }
+  
+  .btn1:hover{
+    cursor: default;
+  }
+  
+  .btn-group, .btn-breadcrumb{
+    margin-bottom: 20px;
+  }
+  
+  .col-sm-12 img{
+    margin-top: 0px;
+    transition: all 1000ms; 
+    height: 500px;
+    width: 100%;
+  }
+  
+
+  h5{
+      color: #000000 !important;
+  }
+
+  @media screen and (max-width:1169px)
+  {
+    .container-fluid{
+      margin: 0px 0px;
+    }
+
+    .col-sm-12 img{
+        height: 300px;
+        width: 100%;
+        transition: all 1000ms; 
+      }
+    
+  }
+  
+  @media screen and (max-width:768px)
+  {
+    .container-fluid{
+      margin:0px 10px;
+    }
+  
+    .btn-group, .btn-breadcrumb{
+      padding-top:20px;
+    }
+
+    .col-sm-12 img{
+        height: 250px;
+        width: 100%;
+        transition: all 1000ms; 
+      }
+      
+  }
+  
+  
+  .btn-breadcrumb .btn:not(:last-child):after {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 10px solid white;
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      left: 100%;
+      z-index: 3;
+    }
+    .btn-breadcrumb .btn:not(:last-child):before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 10px solid rgb(173, 173, 173);
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      margin-left: 1px;
+      left: 100%;
+      z-index: 3;
+    }
+    
+    /** The Spacing **/
+    .btn-breadcrumb .btn {
+      padding:6px 12px 6px 24px;
+    }
+    .btn-breadcrumb .btn:first-child {
+      padding:6px 6px 6px 10px;
+    }
+    .btn-breadcrumb .btn:last-child {
+      padding:6px 18px 6px 24px;
+    }
+    
+  /** Info button **/
+  .btn-breadcrumb .btn.btn-info:not(:last-child):after {
+    border-left: 10px solid #5bc0de;
+  }
+  .btn-breadcrumb .btn.btn-info:not(:last-child):before {
+    border-left: 10px solid #46b8da;
+  }
+  .btn-breadcrumb .btn.btn-info:hover:not(:last-child):after {
+    border-left: 10px solid #39b3d7;
+  }
+  .btn-breadcrumb .btn.btn-info:hover:not(:last-child):before {
+    border-left: 10px solid #269abc;
+  }
+  
+  
+  @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+  
+  hr {
+    height: 4px;
+    margin-left: 15px;
+    margin-bottom:-3px; 
+  }
+  
+  .hr1{
+    margin-top:-10px;
+    margin-left: 0px;
+  }
+  
+  .hr-primary{
+    background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+  }
+  
+  .breadcrumb {
+    background: rgba(245, 245, 245, 0); 
+    border: 0px solid rgba(245, 245, 245, 1); 
+    border-radius: 25px; 
+    display: block;
+  }
+  
+  .fa, .fa-times, a{
+    color: #269abc;
+    transition: all 00ms; 
+  }
+  
+  .fa:hover, .fa-times:hover, a:hover{
+    text-decoration: none;
+    color: #00d4ff;
+    transition: all 600ms;  
+  }
+  
+  #menuProfil{
+    margin-left:-12px;
+  }
+  
+  
+  #button {
+    display: inline-block;
+    background-color: #1976D2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #25aae1;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  

@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="page/css2/cssSambutan2.css">
+<link rel="stylesheet" href="page/css2/cssMagnify.css">
 <div class ="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-xl-12">
@@ -14,13 +15,17 @@
         <div class="col-sm-12">
         <center><h2>Sambutan</h2></center>
         </div>
-        <div class="col-sm-12">  
-          <img src="image/intro.png" title="Animasi Hutan Teknik">
+        <div class="col-sm-12">     
+                <div class="image-set">
+                 <a data-magnify="gallery" data-caption="Animasi Hutan Teknik" href="image/intro.png">
+                 <img src="image/intro.png" title="Klik Untuk Preview Lebih!">
+                    </a> 
+                </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <p>Selamat datang di website Fakultas Teknik Universitas Suryakancana (FT-UNSUR). Fuji syukur kami panjatkan kehadirat Allah SWT atas kuasanya kami dapat merealisasikan website Fakultas Teknik Universitas Suryakancana.</p>
+            <p>Selamat datang di website Fakultas Teknik Universitas Suryakancana (FT-UNSUR). Puji syukur kami panjatkan kehadirat Allah SWT atas kuasanya kami dapat merealisasikan website Fakultas Teknik Universitas Suryakancana.</p>
             <p>Fakultas Teknik merupakan salah satu fakultas di Universitas Suryakancana yang menyelenggarakan 3 program studi berjenjang Sarjana (S1) yang terdiri dari Program Studi Teknik Industri, Program Studi Teknik Sipil dan Program Studi Teknik Informatika. Ketiga Program Studi tersebut telah terakreditasi Badan Akreditasi Nasional (BAN-PT).</p>
             <p>Website ini menyediakan berbagai macam informasi mengenai Fakultas Teknik termasuk profil fakultas, program studi, akademik, kurikulum, aktivitas penelitian, publikasi ilmiah, kemahasiswaan, perpustakaan, alumni, serta berbagai informasi dan pelayanan akademik lainnya. Website ini diharapkan dapat memberikan layanan informasi serta layanan akademik secara online bagi mahasiswa, dosen dan masyarakat luas sehingga informasi dan layanan akademik di Fakultas Teknik mudah diakses oleh semua pihak.</p>
             <p>Para pengunjung website yang kami hormati, website ini akan terus kami kembangkan seiring dengan kemajuan teknologi informasi agar memberikan tampilan yang lebih komprehensif dan berguna bagi semua pihak yang membutuhkan.</p>
@@ -46,4 +51,15 @@
      </div>
      </div>
     
+     <script src="jquery.magnify.js"></script>
+    
+        <script>
+            $('[data-magnify]').magnify({
+            resizable: false,
+             headToolbar: [
+                'close'
+            ],
+            initMaximized: true
+            })
+        </script>
 </div>

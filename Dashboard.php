@@ -43,7 +43,7 @@
                                           <button class="btn btn-primary dropdown-toggle btn-1" type="button" data-toggle="dropdown">Program Studi
                                           <span class="caret"></span></button>
                                           <ul class="dropdown-menu">
-                                            <li><a href="#">Teknik Informatika</a></li>
+                                            <li><a href="?page=IT">Teknik Informatika</a></li>
                                             <li><a href="#">Teknik Industri</a></li>
                                             <li><a href="#">Teknik Sipil</a></li>
                                           </ul>
@@ -140,8 +140,8 @@
 
       </script>
      
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

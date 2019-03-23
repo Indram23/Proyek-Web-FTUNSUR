@@ -15,13 +15,24 @@
 
 .col-sm-12 img{
   margin-top: 0px;
+  transition: all 1000ms; 
+  height: 500px;
+  width: 100%;
 }
+
 
 @media screen and (max-width:1169px)
 {
   .container-fluid{
     margin: 0px 0px;
   }
+
+  .col-sm-12 img{
+      height: 300px;
+      width: 100%;
+      transition: all 1000ms; 
+    }
+  
 }
 
 @media screen and (max-width:768px)
@@ -33,6 +44,13 @@
   .btn-group, .btn-breadcrumb{
     padding-top:20px;
   }
+
+  .col-sm-12 img{
+      height: 250px;
+      width: 100%;
+      transition: all 1000ms; 
+    }
+    
 }
 
 

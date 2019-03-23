@@ -36,7 +36,7 @@
                                           <span class="caret"></span></button>
                                           <ul class="dropdown-menu"> 
                                             <li><a href="?page=sambutan">Sambutan</a></li>
-                                            <li><a href="#">Sejarah</a></li>        
+                                            <li><a href="?page=sejarah">Sejarah</a></li>        
                                           </ul>
                                         </div>    
                                     <div class="dropdown">

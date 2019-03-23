@@ -12,10 +12,10 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <h3>Sambutan</h3>
+        <center><h2>Sambutan</h2></center>
         </div>
         <div class="col-sm-12">  
-          <img src="image/intro.png" alt="">
+          <img src="image/intro.png" title="Animasi Hutan Teknik">
         </div>
     </div>
     <div class="row">
@@ -40,7 +40,7 @@
             <ol class="breadcrumb bread-primary ">   
             <h4><Strong>Menu Profil</Strong></h4>  
             <li><i class="fas fa-check"> Sambutan</i></li>
-            <li><a href="#"><i class="fa fa-times"> Sejarah</i>  </a></li>
+            <li><a href="?page=sejarah"><i class="fa fa-times"> Sejarah</i>  </a></li>
         </ol>
          </div>
      </div>

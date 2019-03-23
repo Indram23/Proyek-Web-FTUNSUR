@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
       <link rel="stylesheet" href="css/cssDashboard.css">
-      <link rel="stylesheet" href="page/css2/cssBeranda.css">
+      <link rel="stylesheet" href="page/css2/cssBeranda2.css">
       <link rel="stylesheet" href="page/css2/cssCard.css">
       
  
@@ -35,7 +35,7 @@
                                           <button class="btn btn-primary dropdown-toggle btn-1" type="button" data-toggle="dropdown">Profil
                                           <span class="caret"></span></button>
                                           <ul class="dropdown-menu"> 
-                                            <li><a href="#">Sambutan</a></li>
+                                            <li><a href="?page=sambutan">Sambutan</a></li>
                                             <li><a href="#">Sejarah</a></li>        
                                           </ul>
                                         </div>    

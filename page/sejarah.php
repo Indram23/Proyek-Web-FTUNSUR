@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="page/css2/cssSejarah.css">
+<link rel="stylesheet" href="page/css2/cssMagnify.css">
 <div class ="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-xl-12">
@@ -16,7 +17,12 @@
             
         </div>
         <div class="col-sm-12">  
-          <img src="image/sejarah.jpeg" title="Animasi Jalan Fakultas Teknik">
+          
+          <div class="image-set">
+                 <a data-magnify="gallery" data-caption="Animasi Jalan Fakultas Teknik" href="image/sejarah.jpeg">
+                 <img src="image/sejarah.jpeg" title="Klik Untuk Preview Lebih!">
+                    </a>
+                </div>
         </div>
     </div>
     <div class="row">
@@ -38,4 +44,15 @@
      </div>
      </div>
     
+     <script src="jquery.magnify.js"></script>
+    
+    <script>
+        $('[data-magnify]').magnify({
+        resizable: false,
+         headToolbar: [
+            'close'
+        ],
+        initMaximized: true
+        })
+    </script>
 </div>

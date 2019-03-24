@@ -6,11 +6,11 @@
     <div class="row">
         <div class="col-sm-12 col-md-12 col-xl-12">
         <div class="btn-group btn-breadcrumb">
-            <a href="?page=beranda" class="btn btn-info"><i class="glyphicon glyphicon-home"></i></a>
-            <span class="btn btn-info btn1">Program Studi</span>
-            <span class="btn btn-info btn1"><strong>Teknik Informatika</strong></span>
+            <a href="?page=beranda" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
+            <span class="btn btn-danger btn1">Program Studi</span>
+            <span class="btn btn-danger btn1"><strong>Teknik Informatika</strong></span>
          </div>
-         <hr class="hr-primary hr1" />
+         <hr class="hr-danger hr1" />
         </div> 
     </div>
     <div class="row">
@@ -30,7 +30,7 @@
         <div class="col-sm-12">
             <br>
             <center>
-           <div class="panel panel-primary">
+           <div class="panel panel-danger">
             <div class="panel-heading"><h4>Visi</h4></div>
              <div class="panel-body"> <p><strong>“Pada tahun 2031 menjadi Program Studi Teknik Informatika yang Unggul di Bidang Rekayasa Teknologi Informasi berstandar Internasional”</strong></p> <br></div>
             </div>
@@ -72,8 +72,8 @@
            </p> <br>
            <h4>Struktur Organisasi Prodi Teknik Informatika</h4>
                 <div class="image-set">
-                 <a data-magnify="gallery" data-caption="Struktur Organisasi Prodi Teknik Informatika" href="image/organIT.png">
-                    <img src="image/organIT.png" title="Klik Untuk Preview Lebih!">
+                 <a data-magnify="gallery" data-caption="Struktur Organisasi Prodi Teknik Informatika" href="image/organIT2.jpg">
+                    <img src="image/organIT2.jpg" title="Klik Untuk Preview Lebih!">
                     </a>
                 </div>
      </div>
@@ -83,17 +83,17 @@
     <div id=menuProfil>
     <div class="row">
          <div class="col-sm-12">
-            <hr class="hr-primary" />
+            <hr class="hr-danger" />
             <ol class="breadcrumb bread-primary ">   
             <h4><Strong>Menu Program Studi</Strong></h4>  
             <li><i class="fas fa-check"> Teknik Informatika</i></li>
-            <li><a href="#"><i class="fa fa-times"> Teknik Industri</i>  </a></li>
+            <li><a href="?page=TIndustri"><i class="fa fa-times"> Teknik Industri</i>  </a></li>
             <li><a href="#"><i class="fa fa-times"> Teknik Sipil</i>  </a></li>
         </ol>
          </div>
      </div>
      </div>
-     <script src="jquery.magnify.js"></script>
+     <script src="js/jquery.magnify.js"></script>
     
         <script>
             $('[data-magnify]').magnify({

@@ -98,25 +98,32 @@
     .btn-breadcrumb .btn:last-child {
       padding:6px 18px 6px 24px;
     }
-    
-  /** Danger button **/
-.btn-breadcrumb .btn.btn-danger:not(:last-child):after {
-  border-left: 10px solid #d9534f;
-}
-.btn-breadcrumb .btn.btn-danger:not(:last-child):before {
-  border-left: 10px solid #d43f3a;
-}
-.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):after {
-  border-left: 10px solid #d2322d;
-}
-.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):before {
-  border-left: 10px solid #ac2925;
-}
+    .btn1{
+        background: #002570;
+    }
+
+    .btn1:hover{
+        background: #28477e;
+    }
+
+ /** Primary button **/
+.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
+    border-left: 10px solid #002570 !important;
+  }
+  .btn-breadcrumb .btn.btn-primary:not(:last-child):before {
+    border-left: 10px solid #357ebd !important;
+  }
+  .btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
+    border-left: 10px solid #263fa4 !important;
+  }
+  .btn-breadcrumb .btn.btn-primary:hover:not(:last-child):before {
+    border-left: 10px solid #263fa4 !important;
+  }
   
-.panel-heading{
-  background: #ac2925 !important;
-  color: #fff !important;
-}
+  .panel-heading{
+    background: #002570 !important;
+    color: #fff !important;
+  }
 
   
   @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
@@ -132,8 +139,8 @@
     margin-left: 0px;
   }
   
-  .hr-danger{
-    background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
+  .hr-primary{
+    background-image: -webkit-linear-gradient(left, rgba(0, 37, 112,.8), rgba(0, 37, 112,.6), rgba(0,0,0,0));
   }
   
   .breadcrumb {
@@ -161,7 +168,7 @@
   
   #button {
     display: inline-block;
-    background-color: #ac2925;
+    background-color: #002570;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -186,7 +193,7 @@
   }
   #button:hover {
     cursor: pointer;
-    background-color: #d2322d;
+    background-color: #28477e;
   }
   #button:active {
     background-color: #555;
@@ -196,4 +203,7 @@
     visibility: visible;
   }
   
-  
+  .tab { 
+    display:inline-block; 
+    margin-left: 60px; 
+}

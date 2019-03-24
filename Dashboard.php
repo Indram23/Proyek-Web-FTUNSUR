@@ -48,7 +48,7 @@
                                             <li><a href="?page=TSipil">Teknik Sipil</a></li>
                                           </ul>
                                         </div>
-                                    <li><a href="#">E-Dokumen</a></li>
+                                    <li><a href="?page=EDoc">E-Dokumen</a></li>
                                     <li><a href="#">Berita</a></li>
                                     <li><a href="#">Pedoman Akademik</a></li>
                                     <li><a href="#">Login</a></li>

@@ -88,7 +88,7 @@
             <h4><Strong>Menu Program Studi</Strong></h4>  
             <li><i class="fas fa-check"> Teknik Informatika</i></li>
             <li><a href="?page=TIndustri"><i class="fa fa-times"> Teknik Industri</i>  </a></li>
-            <li><a href="#"><i class="fa fa-times"> Teknik Sipil</i>  </a></li>
+            <li><a href="?page=TSipil"><i class="fa fa-times"> Teknik Sipil</i>  </a></li>
         </ol>
          </div>
      </div>

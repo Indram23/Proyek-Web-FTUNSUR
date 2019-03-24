@@ -8,7 +8,7 @@
         <div class="btn-group btn-breadcrumb">
             <a href="?page=beranda" class="btn btn-primary btn1"><i class="glyphicon glyphicon-home"></i></a>
             <span class="btn btn-primary btn1">Program Studi</span>
-            <span class="btn btn-primary btn1"><strong>Teknik Informatika</strong></span>
+            <span class="btn btn-primary btn1"><strong>Teknik Industri</strong></span>
          </div>
          <hr class="hr-primary hr1" />
         </div> 
@@ -20,7 +20,7 @@
         </div>
         <div class="col-sm-12">  
         <div class="image-set">
-                 <a data-magnify="gallery" data-caption="Banner Teknik Informatika" href="image/TIndustriBanner.jpg">
+                 <a data-magnify="gallery" data-caption="Banner Teknik Industri" href="image/TIndustriBanner.jpg">
                  <img src="image/TIndustriBanner.jpg" title="Klik Untuk Prewiew Lebih!">
                     </a>
         </div>
@@ -92,9 +92,10 @@
             <hr class="hr-primary" />
             <ol class="breadcrumb bread-primary ">   
             <h4><Strong>Menu Program Studi</Strong></h4>  
-            <li><i class="fas fa-check"> Teknik Indsutri</i></li>
+            <li><i class="fas fa-check"> Teknik Industri</i></li>
+            <li><a href="?page=TSipil"><i class="fa fa-times"> Teknik Sipil</i></a></li>
             <li><a href="?page=IT"><i class="fa fa-times"> Teknik Informatika</i>  </a></li>
-            <li><a href="#"><i class="fa fa-times"> Teknik Sipil</i>  </a></li>
+            
         </ol>
          </div>
      </div>

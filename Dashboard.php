@@ -45,7 +45,7 @@
                                           <ul class="dropdown-menu">
                                             <li><a href="?page=IT">Teknik Informatika</a></li>
                                             <li><a href="?page=TIndustri">Teknik Industri</a></li>
-                                            <li><a href="#">Teknik Sipil</a></li>
+                                            <li><a href="?page=TSipil">Teknik Sipil</a></li>
                                           </ul>
                                         </div>
                                     <li><a href="#">E-Dokumen</a></li>

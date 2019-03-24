@@ -51,7 +51,7 @@
      </div>
      </div>
     
-     <script src="jquery.magnify.js"></script>
+     <script src="js/jquery.magnify.js"></script>
     
         <script>
             $('[data-magnify]').magnify({

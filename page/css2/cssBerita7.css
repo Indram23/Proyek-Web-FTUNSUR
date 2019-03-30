@@ -1,0 +1,365 @@
+.container-fluid{
+    padding-top:15vh;
+    margin: 0px 100px;
+    text-align: justify;
+   
+  }
+
+  #wrapper{
+    margin-top:-100px;
+    margin-bottom: 20px;
+  }
+  
+  .btn1:hover{
+    cursor: default;
+  }
+  
+  .btn-group, .btn-breadcrumb{
+    margin-bottom: 20px;
+  }
+  
+  .col-sm-12 img{
+    margin-top: 0px;
+    transition: all 1000ms; 
+    height: 500px;
+    width: 100%;
+  }
+
+
+  @media screen and (max-width:1169px)
+  {
+    .container-fluid{
+      margin: 0px 0px;
+    }
+
+    .col-sm-12 img{
+        height: 300px;
+        width: 100%;
+        transition: all 1000ms; 
+      }
+    
+  }
+  
+  @media screen and (max-width:768px)
+  {
+    .container-fluid{
+      margin:0px 10px;
+    }
+  
+    .btn-group, .btn-breadcrumb{
+      padding-top:20px;
+    }
+
+    .col-sm-12 img{
+        height: 250px;
+        width: 100%;
+        transition: all 1000ms; 
+      }
+      
+  }
+  
+  
+  .btn-breadcrumb .btn:not(:last-child):after {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 10px solid white;
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      left: 100%;
+      z-index: 3;
+    }
+    .btn-breadcrumb .btn:not(:last-child):before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      border-left: 10px solid rgb(173, 173, 173);
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      margin-left: 1px;
+      left: 100%;
+      z-index: 3;
+    }
+    
+    /** The Spacing **/
+    .btn-breadcrumb .btn {
+      padding:6px 12px 6px 24px;
+    }
+    .btn-breadcrumb .btn:first-child {
+      padding:6px 6px 6px 10px;
+    }
+    .btn-breadcrumb .btn:last-child {
+      padding:6px 18px 6px 24px;
+    }
+    
+  /** Info button **/
+  .btn-breadcrumb .btn.btn-info:not(:last-child):after {
+    border-left: 10px solid #5bc0de;
+  }
+  .btn-breadcrumb .btn.btn-info:not(:last-child):before {
+    border-left: 10px solid #46b8da;
+  }
+  .btn-breadcrumb .btn.btn-info:hover:not(:last-child):after {
+    border-left: 10px solid #39b3d7;
+  }
+  .btn-breadcrumb .btn.btn-info:hover:not(:last-child):before {
+    border-left: 10px solid #269abc;
+  }
+  
+  
+  @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+  
+  hr {
+    height: 4px;
+    margin-left: 15px;
+    margin-bottom:-3px; 
+  }
+  
+  .hr1{
+    margin-top:-10px;
+    margin-left: 0px;
+  }
+  
+  .hr-primary{
+    background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+  }
+  
+  .breadcrumb {
+    background: rgba(245, 245, 245, 0); 
+    border: 0px solid rgba(245, 245, 245, 1); 
+    border-radius: 25px; 
+    display: block;
+    
+  }
+
+  .tab { 
+    display:inline-block; 
+    margin-left: 20px; 
+}
+
+  #button {
+    display: inline-block;
+    background-color: #1976D2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #25aae1;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  } 
+
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.card-block a{
+  color: #269abc;
+    transition: all 10ms; 
+    font-size: 16px;
+    text-align: center; 
+}
+
+.card-block a:hover{
+  text-decoration: none;
+    color: #00d4ff;
+    transition: all 10ms;  
+}
+
+.card img{
+  height: 170px;
+}
+
+.card{
+  transition: all 300ms; 
+}
+
+.cols:hover {
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+
+
+.text-center{
+  text-align: center;
+}
+.card-img-top{
+  width: 100%;
+}
+/*Call to Action*/
+
+.header-line {
+  height: 5px;
+  width: 100%;
+  content: '';
+  display: block;
+}
+.gradient-color-1{
+     background: -webkit-linear-gradient(left,#fc636b 0,#ff6d92 60%,#fd9a00 100%);
+    background: linear-gradient(to right,#fc636b 0,#ff6d92 60%,#fd9a00 100%);
+}
+.gradient-color-2{
+    background: #3be8b0;
+    background: -webkit-linear-gradient(bottom left,#3be8b0 0,#02ceff 100%);
+    background: linear-gradient(to top right,#3be8b0 0,#02ceff 100%);
+}
+/**/
+/*Utility Class*/
+.text-white{
+  color: white;
+}
+.no-margin{
+  margin:0;
+}
+.no-margin-top{
+  margin-top:0;
+}
+.pad-right{
+  margin-right: 0.5em;
+}
+
+.navBer{
+ margin-top:5px;
+ margin-bottom: 20px;
+ padding: 0px 5px;
+}
+
+.fa-calendar-alt{
+ float: left;
+ font-weight: bold;
+}
+
+.fa-user-alt{
+  float: right;
+  font-weight: bold;
+
+}
+
+.btn2{
+  width: 100%;
+  color:#FFF !important;
+}
+
+.btn2:hover{
+  font-weight: bold;
+  color:#fff !important;
+}
+.cols{
+  margin-bottom: 30px;
+}
+
+
+.card-img-top{
+  display: block;
+  transition: transform 0.2s ease-in-out;
+   -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+}
+.card-img-top:hover{
+  transform: scale(1.1);
+}
+
+
+.card-text{
+  margin-top: 10px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+@media screen and (max-width:959px){
+  .card-text{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:767px){
+  .card-text{
+    text-align: initial;
+    display: inline;
+  }
+
+  .card-title{
+    margin: 0;
+    display: inline;
+  }
+  
+  
+
+  .gradient-color-1{
+   visibility: hidden;
+  }
+  .card-block{
+    margin: 0;
+    display: flex;
+  }
+
+  .card img{
+    margin-top: 13px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 140px;
+  }
+
+  .card-block a{
+    font-size: 12px;
+  }
+
+  .btn2{
+    width: 120px;
+    height: 30px;
+    font-size: 9px;
+  }
+
+}
+
+.botpag{
+  text-align: center;
+}

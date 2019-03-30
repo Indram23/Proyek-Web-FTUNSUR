@@ -49,7 +49,7 @@
                                           </ul>
                                         </div>
                                     <li><a href="?page=EDoc">E-Dokumen</a></li>
-                                    <li><a href="#">Berita</a></li>
+                                    <li><a href="?page=Berita1">Berita</a></li>
                                     <li><a href="#">Pedoman Akademik</a></li>
                                     <li><a href="#">Login</a></li>
                               </ul>

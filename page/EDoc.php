@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="page/css2/cssEDoc.css">
-<link rel="stylesheet" href="page/css2/cssMagnify.css">
 
 <div id="button"></div>
 <div class ="container-fluid">
